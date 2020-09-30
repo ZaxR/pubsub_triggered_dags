@@ -1,8 +1,6 @@
 # pubsub_triggered_dags
 
 ## About
-Trigger an Google Compose (Airflow) DAG from a Google Pub/Sub topic in a different project.
-
 There are several different ways to trigger an Airflow DAG from a Pub/Sub topic subscription. This code will focus on using a Google Pub/Sub push subscription to an endpoint URL associated with a Google HTTP Cloud function. The Cloud Function will then trigger an Airflow DAG on Google Composer. Metadata about the Pub/Sub messages received will be stores in a Posthres Google CloudSQL DB via SQLAlchemy.
 
 While Google has basic tutorials for each of triggering Cloud Functions from Pub/Sub and triggering a DAG from a Cloud Function, those tutorials assume all of the parts live in the same Google Project. In practice, is might be common to need to trigger workflows based on other teams' processes, which are outside your control. Additionally, this code has a few bonuses:
