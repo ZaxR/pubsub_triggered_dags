@@ -29,5 +29,8 @@ While Google has basic tutorials for each of triggering Cloud Functions from Pub
 5. Sit back and relax.
 
 ### Some important notes
+- There are a LOT of comments in the code, some of which include useful links.
+  If something isn't clear in the readme, try reading the comments before googling around.
+  Pull requests welcome!
 - The "Secret Manager Secret Accessor" role will need to be added to the service account for each secret if using Google Secret Manager
 - Google Secret Manager uses a GLOBAL NAMESPACE for its secrets. If you have multiple projects using the secret manager, make sure to prefix your secrets with your project name so as not to collide with others' secrets.
